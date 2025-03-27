@@ -9,13 +9,10 @@ extern crate alloc;
 mod syscall;
 
 use alloc::vec::Vec;
-use axstd::println;
 use starry_core::entry::run_user_app;
 
 #[unsafe(no_mangle)]
 fn main() {
-    println!("#### OS COMP TEST GROUP START basic-glibc ####");
-    println!("#### OS COMP TEST GROUP START basic-musl ####");
     let testcases = option_env!("AX_TESTCASES_LIST")
         .unwrap_or_else(|| "Please specify the testcases list by making user_apps")
         .split(',')
