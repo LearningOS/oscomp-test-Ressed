@@ -9,6 +9,7 @@ extern crate alloc;
 mod syscall;
 
 use alloc::vec::Vec;
+use axstd::println;
 use starry_core::entry::run_user_app;
 
 #[unsafe(no_mangle)]
