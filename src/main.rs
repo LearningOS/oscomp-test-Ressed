@@ -29,4 +29,6 @@ fn main() {
         let exit_code = run_user_app(&args, &[]);
         info!("User task {} exited with code: {:?}", testcase, exit_code);
     }
+    axlog::ax_println!("#### OS COMP TEST GROUP END basic-musl ####");
+    axlog::ax_println!("#### OS COMP TEST GROUP END basic-glibc ####");
 }
