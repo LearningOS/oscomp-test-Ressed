@@ -1,5 +1,8 @@
-clean:
+init:
+	git submodule update --init --recursive
+
+clean: init
 	cd starry-next && make clean
 
-oscomp_run:
+oscomp_run: init
 	cd starry-next && make oscomp_run
