@@ -1,4 +1,0 @@
-[submodule "starry-next"]
-	path = starry-next
-	url = git@github.com:Ressed/starry-next.git
-	branch = oscomp-test
