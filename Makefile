@@ -1,5 +1,4 @@
 init:
-	git submodule update --init --recursive
 
 clean: init
 	cd starry-next && make clean
