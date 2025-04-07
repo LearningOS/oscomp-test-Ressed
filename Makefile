@@ -1,6 +1,6 @@
 init:
-	git submodule init
-	cd starry-next && git submodule init
+	git submodule update --init
+	cd starry-next && git submodule update --init
 
 clean: init
 	cd starry-next && make clean && cd ..
