@@ -1,9 +1,10 @@
-init:
-	git submodule update --init
-	cd starry-next && git submodule update --init
+starry-next: 
+	echo "Cloning repository starry-next"
+	git clone -b oscomp-test https://github.com/Ressed/starry-next.git
+	cd starry-next && ./scripts/get_deps.sh
 
-clean: init
-	cd starry-next && make clean && cd ..
+clean: starry-next
+	cd starry-next && make clean
 
-oscomp_run: init
-	cd starry-next && make oscomp_run && cd ..
+oscomp_run: starry-next
+	cd starry-next && make oscomp_run

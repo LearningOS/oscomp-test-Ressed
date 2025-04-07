@@ -1,5 +1,6 @@
 /.vscode
 /.cargo
+/starry-next
 .DS_Store
 *.elf
 *.bin
